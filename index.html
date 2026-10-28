@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seneshal × Взлетай: разбор идей</title>
+<meta name="description" content="Семь выбранных идей: блогеры, направления, бренды, дизайн, задачи сторон и рилс">
+<meta name="theme-color" content="#06244a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306244a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='%23c9ad86'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#06244a;--gold:#a68352;--gold-soft:#c9ad86;--beige:#e3ded8;--ivory:#fbf9f8;--ink:#2b2b2b;--muted:#6b6b6b;--line:rgba(166,131,82,.3);
+  --serif:'Cormorant',Georgia,serif;--sans:'Montserrat',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--ivory);-webkit-font-smoothing:antialiased;line-height:1.65;font-size:15px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:.01em;text-wrap:balance}
+p,li{text-wrap:pretty}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+@media(min-width:700px){.wrap{padding:0 5vw}}
+
+/* обложка */
+.cover{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:url(img/ozero.jpg) center/cover}
+.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,36,74,.2),rgba(6,36,74,.82))}
+.cover .wrap{position:relative;padding-bottom:12vh;width:100%}
+.eyebrow{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-soft);font-weight:500}
+.brand{font-family:var(--serif);font-size:clamp(44px,9vw,116px);letter-spacing:.3em;line-height:1;margin-top:14px}
+.cover .x{font-family:var(--serif);font-style:italic;color:var(--gold-soft);font-size:clamp(19px,2.3vw,28px);margin:16px 0 4px}
+.cover .t{font-family:var(--serif);font-style:italic;font-size:clamp(26px,3.8vw,48px)}
+.cover .meta{margin-top:20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--beige)}
+
+/* липкая навигация */
+.chips{position:sticky;top:0;z-index:30;background:rgba(251,249,248,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.chips .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+.chips a{flex:0 0 auto;text-decoration:none;font-size:12px;letter-spacing:.06em;color:var(--navy);border:1px solid var(--line);padding:7px 12px;background:#fff;transition:background .3s,color .3s}
+.chips a:hover,.chips a.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* интро */
+.intro{padding:72px 0 30px}
+h2.big{font-size:clamp(32px,4.2vw,54px);line-height:1.1;color:var(--navy);margin-top:10px}
+.intro p.lead2{max-width:780px;margin-top:16px;color:var(--muted)}
+.rules{display:grid;gap:16px;margin-top:34px;grid-template-columns:1fr}
+@media(min-width:800px){.rules{grid-template-columns:repeat(3,1fr)}}
+.rule-card{border:1px solid var(--line);background:#fff;padding:24px 22px}
+.rule-card h3{font-size:23px;color:var(--navy);margin-bottom:10px}
+.rule-card p,.rule-card li{font-size:13.5px;color:var(--muted)}
+
+.toc{display:grid;gap:12px;margin:34px 0 0;grid-template-columns:1fr}
+@media(min-width:600px){.toc{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.toc{grid-template-columns:repeat(4,1fr)}}
+.toc a{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;text-decoration:none;background:#fff;border:1px solid var(--line);padding:10px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.toc a:hover{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 14px 28px -14px rgba(6,36,74,.25)}
+.toc .th{width:64px;height:76px;background-size:cover;background-position:center}
+.toc .num{display:block;font-family:var(--serif);font-size:24px;color:var(--acc);line-height:1}
+.toc .nm{display:block;font-family:var(--serif);font-size:19px;color:var(--navy);line-height:1.2;margin-top:2px}
+
+/* идея */
+.idea{padding-top:60px}
+.ihero{position:relative;min-height:62vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;color:#fff}
+.ihero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,36,74,.05) 20%,rgba(6,36,74,.85))}
+.ihero-in{position:relative;max-width:1180px;width:100%;margin:0 auto;padding:40px 16px}
+@media(min-width:700px){.ihero-in{padding:56px 5vw}}
+.chap{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold-soft)}
+.ihero h2{font-size:clamp(36px,5.5vw,72px);line-height:1.05;margin-top:4px}
+.ihero .lead{font-family:var(--serif);font-style:italic;font-size:clamp(18px,1.9vw,24px);max-width:720px;margin-top:10px;color:#efe9e0}
+.ihero .sw{color:#e9e2d6}
+.ihero .sw i{border-color:rgba(255,255,255,.4)}
+.iwrap{max-width:1180px;margin:0 auto;padding:10px 16px 20px}
+@media(min-width:700px){.iwrap{padding:10px 5vw 20px}}
+.block{padding:38px 0 6px;border-bottom:1px solid var(--line)}
+.block:last-of-type{border-bottom:0}
+.bh{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.bn{font-family:var(--serif);font-size:38px;line-height:1;color:var(--acc)}
+.bh h3{font-size:clamp(24px,2.6vw,32px);color:var(--navy);line-height:1.15}
+.note{font-size:14px;background:#fff;border-left:2px solid var(--acc);padding:12px 16px;margin-bottom:12px}
+.small{font-size:12px;color:var(--muted);margin-top:10px}
+.lbl{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--acc);font-weight:500;margin:0 0 6px}
+ul.dash{list-style:none}
+ul.dash li{position:relative;padding:7px 0 7px 22px;font-size:14px;border-bottom:1px solid rgba(166,131,82,.15)}
+ul.dash li:last-child{border-bottom:0}
+ul.dash li:before{content:"";position:absolute;left:0;top:18px;width:11px;height:1px;background:var(--acc)}
+@media(min-width:800px){ul.two{columns:2;column-gap:40px}ul.two li{break-inside:avoid}}
+
+.subs{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:800px){.subs{grid-template-columns:repeat(3,1fr)}}
+.sub{background:#fff;border:1px solid var(--line);border-top:3px solid var(--acc);padding:22px 20px}
+.sub .sn{font-family:var(--serif);font-size:30px;color:var(--acc);line-height:1}
+.sub h4{font-size:22px;color:var(--navy);margin:8px 0}
+.sub p{font-size:13.5px;color:#4a4a4a}
+.sub .res{margin-top:10px;color:var(--muted)}
+.sub .res b{font-weight:500;color:var(--navy)}
+
+.tw{overflow-x:auto}
+.bt{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);min-width:560px}
+.bt th{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc);font-weight:500;text-align:left;padding:12px 16px;border-bottom:1px solid var(--acc)}
+.bt td{padding:12px 16px;font-size:13.5px;vertical-align:top;border-bottom:1px solid rgba(166,131,82,.18)}
+.bt tr:last-child td{border-bottom:0}
+.bt td:first-child{font-family:var(--serif);font-size:19px;color:var(--navy);line-height:1.2;width:28%}
+
+.swatches{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.sw{width:58px;text-align:center;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);line-height:1.3}
+.sw i{display:block;width:44px;height:44px;border-radius:50%;margin:0 auto 6px;border:1px solid rgba(0,0,0,.1)}
+.design .swatches{margin-top:4px}
+.pal-row{display:grid;gap:20px;grid-template-columns:1fr;margin-bottom:18px}
+@media(min-width:800px){.pal-row{grid-template-columns:1fr 1fr}}
+.dgrid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:700px){.dgrid{grid-template-columns:1fr 1fr}}
+.dgrid>div{background:#fff;border:1px solid var(--line);padding:18px 18px}
+.dgrid p{font-size:13.5px}
+
+.roles,.reels{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:900px){.roles,.reels{grid-template-columns:repeat(3,1fr)}}
+.role,.reel{background:#fff;border:1px solid var(--line);padding:22px 20px}
+.acc-tag{display:inline-block;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:#fff;background:var(--navy);padding:5px 10px;margin-bottom:12px}
+.reel .acc-tag{background:var(--acc)}
+.reel h4{font-size:22px;color:var(--navy);line-height:1.2;margin-bottom:12px}
+.reel p{font-size:13.5px}
+.reel .lbl{margin-top:12px}
+ul.contr{list-style:none}
+ul.contr li{padding:8px 0;border-bottom:1px solid rgba(166,131,82,.15);font-size:13.5px;color:#4a4a4a}
+ul.contr li:last-child{border-bottom:0}
+ul.contr b{display:block;font-weight:500;color:var(--navy)}
+
+.pn{display:flex;justify-content:space-between;gap:12px;padding:26px 0 10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.pn a{text-decoration:none;color:var(--acc);border-bottom:1px solid transparent}
+.pn a:hover{border-color:var(--acc)}
+
+/* план запуска */
+.steps{display:grid;gap:14px;grid-template-columns:1fr;margin-top:6px}
+@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:#fff;border:1px solid var(--line);border-top:3px solid var(--acc);padding:22px 20px}
+.step .when{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc);font-weight:500}
+.step h4{font-size:24px;color:var(--navy);margin:6px 0 8px;line-height:1.15}
+.step p{font-size:13.5px;color:#4a4a4a}
+.step.main{border-top-width:5px}
+.kpi{display:grid;gap:12px;grid-template-columns:1fr 1fr;margin-top:6px}
+@media(min-width:800px){.kpi{grid-template-columns:repeat(4,1fr)}}
+.kpi div{background:#fff;border:1px solid var(--line);padding:18px 16px}
+.kpi b{display:block;font-family:var(--serif);font-weight:500;font-size:32px;color:var(--navy);line-height:1.1}
+.kpi span{font-size:12.5px;color:var(--muted)}
+.calc-in{display:grid;gap:12px;grid-template-columns:1fr 1fr;margin:6px 0 16px}
+@media(min-width:800px){.calc-in{grid-template-columns:repeat(4,1fr)}}
+.calc-in label{display:flex;flex-direction:column;gap:6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:500}
+.calc-in input{font:400 16px var(--sans);color:var(--navy);border:1px solid var(--line);background:#fff;padding:10px 12px;width:100%}
+.calc-in input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.calc-t{margin-bottom:14px}
+.calc-t small{color:var(--muted);font-size:11.5px}
+.calc-t b{font-weight:500;color:var(--navy)}
+@media print{.calc-in input{border:0;padding:0}}
+.bt td.t{font-family:var(--sans);font-size:13.5px;color:var(--acc);font-weight:500;width:12%;white-space:nowrap}
+
+.outro{background:var(--navy);color:var(--beige);padding:70px 0;margin-top:60px}
+.outro h2{color:#fff;font-size:clamp(30px,4vw,48px)}
+.outro ul.dash li{border-color:rgba(201,173,134,.2);color:#d9d4cc}
+.outro ul.dash li:before{background:var(--gold-soft)}
+.outro a.btn{display:inline-block;margin-top:24px;text-decoration:none;border:1px solid var(--gold-soft);color:#fff;padding:12px 18px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;transition:background .3s}
+.outro a.btn:hover{background:var(--gold)}
+.outro .legal{margin-top:34px;font-size:11px;color:rgba(227,222,216,.5)}
+.outro .author{margin-top:14px;padding-top:14px;border-top:1px solid rgba(201,173,134,.25);font-size:12.5px;letter-spacing:.04em;color:var(--beige)}
+.outro .author b{font-weight:500;color:#fff}
+.outro .author a{color:var(--gold-soft);text-decoration:none;border-bottom:1px solid rgba(201,173,134,.4)}
+@media print{.chips{display:none}.idea{break-before:page}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header class="cover">
+  <div class="wrap">
+    <div class="eyebrow">бутик-отель · озеро Сенеж</div>
+    <div class="brand">SENESHAL</div>
+    <div class="x">× PR-агентство «Взлетай»</div>
+    <div class="t">Разбор выбранных идей</div>
+    <div class="meta">план запуска · 7 идей · блогеры · бренды · дизайн · задачи · рилс</div>
+  </div>
+</header>
+
+<nav class="chips" aria-label="Идеи"><div class="wrap"><a href="#ideas">Общее</a><a href="#plan">План запуска</a><a href="#i01">01 Тишина у Сенежа</a><a href="#i02">02 Seneshal Beauty Lab</a><a href="#i03">03 Вкус покоя</a><a href="#i04">04 Iyashi Dome</a><a href="#i06">06 Seneshal Sleep</a><a href="#i07">07 Пар и покой</a><a href="#i08">08 Свадебные выходные на Сенеже</a></div></nav>
+
+<section class="intro" id="ideas"><div class="wrap">
+  <div class="eyebrow" style="color:var(--gold)">Как читать</div>
+  <h2 class="big">Каждая идея в шести разрезах</h2>
+  <p class="lead2">По каждой выбранной идее: каких блогеров зовём, три направления развития, бренды, дизайн в цветах отеля, кто что делает (мы, отель, подрядчики) и рилс для блогеров, агентства и аккаунта Seneshal. Камерный формат: до 5 гостей-блогеров, по свадьбе 2–3 пары. Команда проекта, около 5–6 человек (организаторы «Взлетай», декоратор, фотограф, видеограф), и специалисты партнёров идут сверх этого.</p>
+  <div class="rules">
+    <div class="rule-card"><h3>Что обязан блогер</h3><ul class="dash">
+      <li>1 рилс по концепции идеи с обязательными кадрами</li><li>7–10 сторис в день события</li><li>Отметка отеля, брендов и геометка</li><li>Промокод или ссылка на бронь</li><li>Публикация в течение 7 дней</li><li>Право на репост для отеля, брендов и агентства</li></ul></div>
+    <div class="rule-card"><h3>Дизайн-основа</h3><p>Все идеи держатся на цветах отеля: глубокий синий Сенежа, золото, песок, беж и слоновая кость. Шрифты с засечками, монограмма S, золотое тиснение. У каждой идеи свой акцентный цвет.</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+    <div class="rule-card"><h3>Как считаем результат</h3><p>У каждого блогера и партнёра свой промокод или ссылка. Отель видит, сколько броней, записей в SPA и заявок на осмотр пришло с каждого события. Охваты ориентировочные и уточняются после подбора состава.</p></div>
+  </div>
+  <div class="toc"><a href="#i01" style="--acc:#8c9671"><span class="th" style="background-image:url(img/stol.jpg)"></span><span><span class="num">01</span><span class="nm">Тишина у Сенежа</span></span></a><a href="#i02" style="--acc:#b47e6f"><span class="th" style="background-image:url(img/beauty.jpg)"></span><span><span class="num">02</span><span class="nm">Seneshal Beauty Lab</span></span></a><a href="#i03" style="--acc:#c9741f"><span class="th" style="background-image:url(img/chef.jpg)"></span><span><span class="num">03</span><span class="nm">Вкус покоя</span></span></a><a href="#i04" style="--acc:#8a7a66"><span class="th" style="background-image:url(img/iyashi.jpg)"></span><span><span class="num">04</span><span class="nm">Iyashi Dome</span></span></a><a href="#i06" style="--acc:#7d79a8"><span class="th" style="background-image:url(img/pillows.jpg)"></span><span><span class="num">06</span><span class="nm">Seneshal Sleep</span></span></a><a href="#i07" style="--acc:#8a5a3b"><span class="th" style="background-image:url(img/chalet2.jpg)"></span><span><span class="num">07</span><span class="nm">Пар и покой</span></span></a><a href="#i08" style="--acc:#b8955a"><span class="th" style="background-image:url(img/wed_lake.jpg)"></span><span><span class="num">08</span><span class="nm">Свадебные выходные на Сенеже</span></span></a></div>
+</div></section>
+
+<section class="idea" id="plan" style="--acc:#a68352">
+  <header class="ihero" style="background-image:url(img/spa.jpg)">
+    <div class="ihero-in">
+      <div class="chap">План запуска</div>
+      <h2>Сначала SPA, свадьба весной</h2>
+      <p class="lead">SPA можно сыграть уже этой зимой. Свадьбу показываем весной, когда на пирсе тепло, а озеро и берег в зелени. Зимний вариант свадьбы даём как дополнительное предложение.</p>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Порядок этапов</h3></div>
+      <div class="steps">
+        <div class="step main"><div class="when">Конец ноября – начало декабря 2026</div><h4>SPA-сутки «Тишина у Сенежа»</h4><p>Три идеи за одну ночь: бранч шефа (01), Beauty Lab (02) и «Пар и покой» (07). 5 гостей-блогеров.</p><p class="res small"><b>Что даст:</b> загрузка SPA и номеров зимой, ритуал Сенежа в SPA-меню, контент к Новому году и зимним подборкам СМИ.</p></div>
+        <div class="step"><div class="when">Январь – март 2027</div><h4>SPA-продолжение</h4><p>Iyashi Dome как детокс после праздников (04), Seneshal Sleep (06), «Вкус покоя» (03). Каждая идея отдельным выездом на 5 гостей.</p><p class="res small"><b>Что даст:</b> гости в будни и в межсезонье.</p></div>
+        <div class="step"><div class="when">Весна 2027 (май)</div><h4>Весенние свадебные выходные</h4><p>2–3 пары, церемония на пирсе на закате, пикник у воды, ужин на террасе (08). Зимний вариант в Зимнем саду — на рассмотрение.</p><p class="res small"><b>Что даст:</b> заявки на осмотр и брони свадеб на сезон 2027–2028.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Блогеры SPA-суток</h3></div>
+      <p class="note">5 человек: 1 крупный, 2 средних, 2 микро. Женщины 30–45 лет из Москвы, то есть ядро гостей отеля. Кандидаты из базы агентства, окончательный состав подтверждаем за неделю до события, и под каждого есть резерв.</p>
+      <div class="tw"><table class="bt"><tr><th>Роль</th><th>Кандидат</th><th>Зачем на событии</th></tr>
+        <tr><td>Эксперт Beauty Lab</td><td>Аида, косметолог (@aidacosm)</td><td>разбирает состав скраба вместе с технологом бренда, даёт экспертный взгляд</td></tr>
+        <tr><td>Тело и восстановление</td><td>Анна Пименова (@pimenovasport)</td><td>парение, купель и детокс органично ложатся в её спортивный контент</td></tr>
+        <tr><td>Крупный lifestyle и 2 микро</td><td>подбираем из базы агентства под даты</td><td>широкий охват плюс живая, доверчивая аудитория «куда поехать на выходные»</td></tr>
+      </table></div>
+      <p class="small">По желанию отеля можно добавить одну селебрити из пула агентства как усилитель охвата, условия обсуждаем отдельно.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды-партнёры агентства</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Бренд</th><th>Что делает на событии</th><th>Польза отелю</th></tr>
+        <tr><td>Guinot</td><td>французская профессиональная SPA-косметика: соавтор ритуала Сенежа, уход на Beauty Lab, наборы гостям</td><td>французский бренд во французском шале, ритуал с громким именем для продажи в SPA</td></tr>
+        <tr><td>Alleva / Rich Breed</td><td>pet-уголок, welcome-набор для собак, кадры «тишина с собакой»</td><td>отель dog-friendly: отдельный сегмент гостей. У агентства уже есть их dog-friendly бранч: 50+ публикаций, +18% к продажам бренда</td></tr>
+        <tr><td>RusseQuelle</td><td>вода и welcome-напитки в SPA и на бранче</td><td>бренд в кадрах у купели и в лаунже, меньше расходов на напитки</td></tr>
+        <tr><td>Organic Breakfast</td><td>короткая история о wellness на бранче, наборы гостям</td><td>wellness-повестка для СМИ</td></tr>
+        <tr><td>Roberto Bravo (весной)</td><td>кольца для обновления клятв на пирсе</td><td>ювелирный бренд в свадебном контенте</td></tr>
+      </table></div>
+      <p class="small">Это бренды, с которыми агентство уже работает. Их участие подтверждаем после выбора даты. К ним добавляются новые партнёры из разборов идей ниже: банная косметика, текстиль, чай, керамика, а для свадьбы флорист, кондитер, салон платьев.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Ориентир результата</h3></div>
+      <div class="kpi">
+        <div><b>0,4–0,7 млн</b><span>охват SPA-суток: рилс и сторис 5 блогеров, публикации брендов и отеля</span></div>
+        <div><b>30+</b><span>единиц контента: рилс, сторис, фото, банк кадров для отеля</span></div>
+        <div><b>0,5–1 млн</b><span>охват весенних свадебных выходных</span></div>
+        <div><b>8–10</b><span>заявок на осмотр площадки после свадьбы, по промокоду</span></div>
+      </div>
+      <p class="small">Охват считаем по уровням блогеров: суммарная аудитория 5 человек около 0,4–0,9 млн подписчиков. Рилс видят около 30–50% аудитории, сторис 8–15%, сверху публикации 3–4 брендов и отеля. После утверждения состава пересчитаем точно.</p>
+    </div>
+
+    <div class="block" id="calc">
+      <div class="bh"><span class="bn">4а</span><h3>Пример: что это даст в деньгах</h3></div>
+      <p class="note">Расчёт на примере. Аренда «Вилла СПА» взята из прайса отеля (50 000 ₽ за 2 часа, до 5 гостей). Остальные цены условные: впишите свои, и цифры пересчитаются.</p>
+      <div class="calc-in">
+        <label>Ночь в номере, ₽<input type="number" id="c_night" value="25000" step="1000"></label>
+        <label>Аренда «Вилла СПА», ₽<input type="number" id="c_spa" value="50000" step="1000"></label>
+        <label>Средний чек свадьбы, ₽<input type="number" id="c_wed" value="1500000" step="50000"></label>
+        <label>Питание на человека в сутки, ₽<input type="number" id="c_food" value="5000" step="500"></label>
+      </div>
+      <div class="tw"><table class="bt calc-t">
+        <tr><th>SPA-сутки: воронка</th><th>Осторожно</th><th>Базово</th></tr>
+        <tr><td>Охват</td><td>400 000</td><td>700 000</td></tr>
+        <tr><td>Переходы по промокоду</td><td><span id="o_cl1"></span> <small>(0,3% охвата)</small></td><td><span id="o_cl2"></span> <small>(0,5%)</small></td></tr>
+        <tr><td>Брони</td><td><span id="o_b1"></span> <small>(1% переходов)</small></td><td><span id="o_b2"></span> <small>(1,5%)</small></td></tr>
+        <tr><td>Из них с арендой «Вилла СПА»</td><td><span id="o_s1"></span> <small>(30% броней)</small></td><td><span id="o_s2"></span> <small>(30%)</small></td></tr>
+        <tr><td>Выручка отеля с броней</td><td><b id="o_r1"></b></td><td><b id="o_r2"></b></td></tr>
+      </table></div>
+      <div class="tw"><table class="bt calc-t">
+        <tr><th>Вклад отеля в SPA-сутки (по прайсу)</th><th>Расчёт</th><th>Сумма</th></tr>
+        <tr><td>Номера</td><td>5 блогеров + 3 номера команде × 1 ночь</td><td id="o_rooms"></td></tr>
+        <tr><td>«Вилла СПА»</td><td>2 сеанса: Beauty Lab и «Пар и покой»</td><td id="o_spa"></td></tr>
+        <tr><td>Питание</td><td>около 11 человек × 1 сутки</td><td id="o_food"></td></tr>
+        <tr><td>Итого по прайсу</td><td>себестоимость для отеля ниже</td><td><b id="o_cost"></b></td></tr>
+      </table></div>
+      <div class="tw"><table class="bt calc-t">
+        <tr><th>Весенняя свадьба</th><th>Осторожно</th><th>Базово</th></tr>
+        <tr><td>Заявки на осмотр</td><td>8</td><td>10</td></tr>
+        <tr><td>Свадьбы забронировано</td><td><span id="o_w1"></span> <small>(20% осмотров)</small></td><td><span id="o_w2"></span> <small>(30%)</small></td></tr>
+        <tr><td>Выручка отеля</td><td><b id="o_wr1"></b></td><td><b id="o_wr2"></b></td></tr>
+      </table></div>
+      <div class="kpi">
+        <div><b id="o_k1"></b><span>выручка с SPA-суток на 1 ₽ вклада отеля (осторожно – базово)</span></div>
+        <div><b>120–350 тыс. ₽</b><span>стоило бы столько же показов в таргете (CPM 300–500 ₽)</span></div>
+        <div><b id="o_k3"></b><span>выручка от одной свадебной волны</span></div>
+        <div><b>30+ / 30+</b><span>единиц контента с каждого события остаются отелю</span></div>
+      </div>
+      <p class="small">Доли переходов и броней — осторожные ориентиры для выездов блогеров, а не гарантия. Настоящие цифры отель увидит по промокодам. Стоимость услуг агентства в расчёт не входит, её называет Виктория Захарова.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>План SPA-суток</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Время</th><th>Что происходит</th><th>Кто отвечает</th><th>Что снимаем</th></tr>
+        <tr><td class="t">Сб 7:00</td><td>команда агентства приезжает за 4–5 часов до гостей: лаунж, стол, декор, подарки, свет, прогон тайминга с отелем <i>(на рассмотрение: приехать накануне, в пятницу вечером, чтобы утром сразу начать подготовку)</i></td><td>Взлетай и контактное лицо отеля</td><td>пустые локации, детали декора</td></tr>
+        <tr><td class="t">12:00</td><td>заезд, welcome-напиток, открытка с программой</td><td>ресепшен, встречает Взлетай</td><td>заезд, номер, вид из окна</td></tr>
+        <tr><td class="t">13:00</td><td>бранч за общим столом шефа, короткие истории партнёров</td><td>ресторан, ведёт Взлетай</td><td>сервировка, шеф, стол сверху</td></tr>
+        <tr><td class="t">15:00</td><td>прогулка к озеру в золотой час (в ноябре закат около 16:00)</td><td>фотограф и видеограф</td><td>берег, пирс, собаки гостей</td></tr>
+        <tr><td class="t">16:00</td><td>Beauty Lab: скраб и соль для купели, баночки «Seneshal × бренд» с именем гостя</td><td>технолог бренда, лаунж отеля</td><td>руки, текстуры, этикетки крупно</td></tr>
+        <tr><td class="t">19:00</td><td>«Пар и покой»: парение со своим скрабом, купель на террасе, чай</td><td>пармейстер и «Вилла СПА»</td><td>пар в тёплом свете, шапки, купель</td></tr>
+        <tr><td class="t">21:00</td><td>ужин в ресторане или Зимнем саду</td><td>ресторан отеля</td><td>ужин при свечах</td></tr>
+        <tr><td class="t">Вс 9:30</td><td>завтрак, сторис «как я спала у озера»</td><td>ресторан отеля</td><td>завтрак, туман на озере</td></tr>
+        <tr><td class="t">11:00</td><td>выезд гостей, подарочные наборы брендов</td><td>Взлетай</td><td>распаковка подарков</td></tr>
+        <tr><td class="t">11:00–14:00</td><td>команда остаётся: разбор декора, вывоз реквизита брендов, досъёмка локаций, итоги дня с отелем, выезд команды</td><td>Взлетай</td><td>досъёмка для отеля</td></tr>
+      </table></div>
+      <p class="small">Каждую часть (бранч, Beauty Lab, пар) можно провести и отдельным выездом, если удобнее растянуть на несколько дат.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Как идём к событию</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Когда</th><th>Что делаем</th></tr>
+        <tr><td>Сейчас</td><td>отель подтверждает формат «SPA первым» и 2–3 даты, агентство присылает смету</td></tr>
+        <tr><td>За 4 недели</td><td>бриф блогерам, запросы брендам, пармейстер</td></tr>
+        <tr><td>За 3 недели</td><td>подтверждены блогеры с резервом, бренды и номера; техзадание отелю: номера, меню, лаунж, SPA</td></tr>
+        <tr><td>За 2 недели</td><td>сценарий, обязательные кадры, открытки, этикетки «Seneshal × бренд», промокод</td></tr>
+        <tr><td>За неделю</td><td>финальный состав, подарки в отеле, тайминг согласован с контактным лицом</td></tr>
+        <tr><td>1–7 дней после</td><td>выход рилс и постов, контроль отметок и промокода</td></tr>
+        <tr><td>Через 2 недели</td><td>рассылка в СМИ с фото, ритуал Сенежа в SPA-меню</td></tr>
+        <tr><td>Через 3 недели</td><td>отчёт отелю: охваты, контент, переходы по промокоду, записи в SPA</td></tr>
+      </table></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">7</span><h3>Весной: свадебные выходные</h3></div>
+      <p class="note">2–3 пары-блогера (4–6 человек), весна 2027 (май). На пирсе уже тепло, берег в зелени, закат около 21:00, поэтому золотой час длинный. Весной пары как раз выбирают площадку на лето и осень. Подбор пар с февраля, бренды с марта.</p>
+      <div class="tw"><table class="bt"><tr><th>Время</th><th>Что происходит</th></tr>
+        <tr><td class="t">Сб 9:00</td><td>команда агентства и подрядчики приезжают за 4–5 часов до пар: арка на пирсе, флористика, стол на террасе, свет <i>(на рассмотрение: приехать накануне, в пятницу вечером)</i></td></tr>
+        <tr><td class="t">14:00</td><td>заезд пар</td></tr>
+        <tr><td class="t">15:00</td><td>утро невесты в сюите: визажист, уход Guinot; жених на прогулке у озера</td></tr>
+        <tr><td class="t">17:00</td><td>пикник на берегу и отдых у воды</td></tr>
+        <tr><td class="t">20:00</td><td>церемония на пирсе, обновление клятв, кольца Roberto Bravo, собака-кольценосец</td></tr>
+        <tr><td class="t">21:00</td><td>золотой час, фото у воды</td></tr>
+        <tr><td class="t">21:30</td><td>ужин-дегустация свадебного меню на террасе, мини-торт</td></tr>
+        <tr><td class="t">Вс 10:00</td><td>бранч, утренняя съёмка у озера</td></tr>
+        <tr><td class="t">12:00</td><td>показ залов и разговор с отелем о свадьбе</td></tr>
+        <tr><td class="t">14:00</td><td>выезд пар</td></tr>
+        <tr><td class="t">14:00–17:00</td><td>команда остаётся: разбор арки и декора, вывоз реквизита, досъёмка пирса и залов, выезд команды</td></tr>
+      </table></div>
+      <p class="small"><b>Зимний вариант (на рассмотрение):</b> на пирсе зимой слишком холодно, поэтому церемония на закате около 16:00 с короткой съёмкой на пирсе, ужин и основные кадры в Зимнем саду в свечах, шале в снегу.</p>
+      <p class="small">До весны можно подогреть тему: к 14 февраля «Помолвка под ключ» на пирсе. Пара, которая сделала предложение в отеле, часто возвращается сюда же на свадьбу.</p>
+    </div>
+    <div class="pn"><span></span><a href="#ideas">все идеи</a><a href=#i01>01 →</a></div>
+  </div>
+</section>
+
+<section class="idea" id="i01" style="--acc:#8c9671">
+  <header class="ihero" style="background-image:url(img/stol.jpg)">
+    <div class="ihero-in">
+      <div class="chap">Идея 01</div>
+      <h2>Тишина у Сенежа</h2>
+      <p class="lead">Wellness-бранч за общим столом шефа и банный ритуал, который остаётся в SPA-меню.</p>
+      <div class="swatches"><span class="sw"><i style="background:#efe6d8"></i>Лён</span><span class="sw"><i style="background:#8c9671"></i>Шалфей</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span><span class="sw"><i style="background:#a68352"></i>Золото</span></div>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Блогеры</h3></div>
+      <p class="note">5 человек: 1 крупный (300–500 тыс.), 2 средних (50–150 тыс.), 2 микро (10–50 тыс.). Женщины 30–45, Москва и область.</p>
+      <ul class="dash two"><li>Wellness и slow life: ритуалы, забота о себе, загородные выходные</li><li>Lifestyle «куда поехать из Москвы на выходные»</li><li>Эстетика дома и интерьера: стол, керамика, свет</li><li>Блогер с собакой (отель pet-friendly)</li><li>Мама-lifestyle: «выходные без детей, наконец-то»</li></ul>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Три направления, куда можно развить идею</h3></div>
+      <div class="subs"><div class="sub"><div class="sn">А</div><h4>Сезонный стол</h4><p>Бранч повторяется каждый сезон с новым меню: осенью брусника и грибы, зимой хвоя и облепиха, весной черемша. Каждый раз новые 5 гостей.</p><p class="res"><b>Что даст:</b> серия из 3–4 событий в год и постоянный повод для публикаций</p></div><div class="sub"><div class="sn">Б</div><h4>Ритуал Сенежа как продукт</h4><p>Главный герой не бранч, а банный ритуал, созданный с брендом. Гости первыми его пробуют, отель запускает его в SPA-меню с промокодом.</p><p class="res"><b>Что даст:</b> новая платная услуга SPA с понятным учётом продаж</p></div><div class="sub"><div class="sn">В</div><h4>Тишина с собакой</h4><p>Dog-friendly версия: гости приезжают с собаками, pet-уголок на террасе, прогулка у озера, welcome-набор для питомца.</p><p class="res"><b>Что даст:</b> выход на аудиторию владельцев собак, которых мало кто из отелей зовёт</p></div></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Категория</th><th>Примеры</th><th>Что даёт</th></tr><tr><td>Банная и SPA-косметика</td><td>Mi&amp;Ko, Siberina, Levrana (мы на связи)</td><td>технолог-соавтор ритуала, продукты на 3 месяца, наборы гостям</td></tr><tr><td>Чаи, травы, wellness</td><td>российские травники, подберём</td><td>сборы к бранчу, 5 подарочных наборов</td></tr><tr><td>Керамика, свечи, лён</td><td>нишевые российские мастерские</td><td>сервировка стола, подарок</td></tr><tr><td>Товары для собак</td><td>средний бренд аксессуаров</td><td>pet-уголок и welcome-набор (для направления «с собакой»)</td></tr></table></div>
+      <p class="small">Названия брендов приводим как примеры уровня. Договорённостей пока нет, подтвердим после выбора идеи.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Дизайн</h3></div>
+      <div class="design">
+        <div class="pal-row"><div><p class="lbl">Основа: цвета отеля</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+          <div><p class="lbl">Акцент идеи</p><div class="swatches"><span class="sw"><i style="background:#efe6d8"></i>Лён</span><span class="sw"><i style="background:#8c9671"></i>Шалфей</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span><span class="sw"><i style="background:#a68352"></i>Золото</span></div></div></div>
+        <div class="dgrid">
+          <div><p class="lbl">Декор и предметы</p><p>Длинный деревянный стол без скатерти, льняные дорожки, керамика ручной работы, свечи в стекле, пучки шалфея и чабреца, пледы на террасе.</p></div>
+          <div><p class="lbl">Полиграфия и фирменные детали</p><p>Карточки с именами гостей и меню «Тишина у Сенежа» на хлопковой бумаге, золотое тиснение монограммы S, шрифт с засечками как у отеля. Этикетка ритуала на баночках.</p></div>
+          <div><p class="lbl">Свет и стиль съёмки</p><p>Мягкий дневной свет от озера, тёплая цветокоррекция, много воздуха, кадры сверху на стол.</p></div>
+          <div><p class="lbl">Чего избегаем</p><p>Баннеры, пресс-волл, яркие логотипы. Бренд партнёра только на этикетке и упаковке.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>Кто что делает</h3></div>
+      <div class="roles">
+        <div class="role"><div class="acc-tag">Взлетай</div><ul class="dash"><li>Сценарий, тайминг и ведение программы на месте</li><li>Подбор, приглашение и бриф 5 блогеров (обязательные кадры, отметки, сроки)</li><li>Переговоры с брендами и подрядчиками, сбор подарков</li><li>Рассылка в СМИ, промокоды и итоговый отчёт с охватами и заявками</li><li>Сценарий ритуала вместе с технологом бренда и SPA отеля</li></ul></div>
+        <div class="role"><div class="acc-tag">Отель Seneshal</div><ul class="dash"><li>Бранч от шефа, «Вилла СПА» под ритуал, мастер SPA</li><li>Площадка, номера и питание по согласованной программе</li><li>Один контактный человек и согласование дат</li><li>Публикация рилс и сторис у себя, промокод или ссылка на бронь</li><li>Согласие на съёмку и права на фото и видео для отеля, партнёров и агентства</li></ul></div>
+        <div class="role"><div class="acc-tag">Подрядчики</div><ul class="contr"><li><b>Фотограф</b>репортаж и кадры стола сверху, банк фото для отеля</li><li><b>Видеограф</b>рилс для отеля и агентства, вертикальные исходники</li><li><b>Фитодизайнер или флорист</b>травы и сухоцветы на стол, букетики гостям</li><li><b>Типография</b>карточки, меню, этикетки ритуала</li><li><b>Музыкант (по желанию)</b>виолончель или арфа тихо во время бранча</li></ul><p class="small">Подбирает и координирует «Взлетай», условия (гонорар или бартер) согласуем с отелем.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Рилс для трёх аккаунтов</h3></div>
+      <div class="reels"><div class="reel"><div class="acc-tag">Блогеры</div><h4>«День, когда я выключила телефон»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>подъезд к шале и озеру</li><li>общий стол сверху и руки с чашкой травяного чая</li><li>ритуал в «Вилла СПА»: пар, купель</li><li>тишина у озера в конце</li><li>отметка отеля, брендов и геометка</li></ul>
+      <p class="lbl">К чему приведёт</p><p>сохранения и вопросы «где это», переходы по промокоду на бронь</p></div><div class="reel"><div class="acc-tag">Взлетай</div><h4>«Как собрать бранч, о котором говорят»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>стол за 3 часа до гостей и в момент подачи</li><li>команда за работой: тайминг, звонки, раскладка подарков</li><li>реакция гостей</li><li>финал: «а это только первый сезон»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>кейс для продажи PR-услуг другим отелям и брендам</p></div><div class="reel"><div class="acc-tag">Seneshal</div><h4>«Так звучит тишина (без голоса, только звуки)»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>звук озера</li><li>ложка о керамику</li><li>шипение камней в бане</li><li>титр в конце: «Ритуал Сенежа теперь в SPA-меню»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>продажи ритуала и рост броней SPA</p></div></div>
+    </div>
+    <div class="pn"><span></span><a href="#ideas">все идеи</a><a href=#i02>02 →</a></div>
+  </div>
+</section>
+<section class="idea" id="i02" style="--acc:#b47e6f">
+  <header class="ihero" style="background-image:url(img/beauty.jpg)">
+    <div class="ihero-in">
+      <div class="chap">Идея 02</div>
+      <h2>Seneshal Beauty Lab</h2>
+      <p class="lead">Гости своими руками собирают уход вместе с технологом бренда, баночки подписаны их именами.</p>
+      <div class="swatches"><span class="sw"><i style="background:#e8d5cf"></i>Пудра</span><span class="sw"><i style="background:#b47e6f"></i>Глина</span><span class="sw"><i style="background:#f8efea"></i>Молоко</span><span class="sw"><i style="background:#a68352"></i>Золото</span></div>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Блогеры</h3></div>
+      <p class="note">5 человек: 1 крупный бьюти-блогер, 2 средних, 2 микро с высокой вовлечённостью. Женщины 28–45, Москва.</p>
+      <ul class="dash two"><li>Уход и skincare: разборы составов, «что у меня на полке»</li><li>Натуральная косметика и DIY-рецепты</li><li>Косметолог или дерматолог с блогом (экспертность)</li><li>Эстетичный lifestyle: ванная, ритуалы, красивые баночки</li><li>Невеста или блогер про подготовку к свадьбе (мост к идее 08)</li></ul>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Три направления, куда можно развить идею</h3></div>
+      <div class="subs"><div class="sub"><div class="sn">А</div><h4>Лаборатория по сезону</h4><p>Каждый сезон свой набор: зимой облепиха и хвоя, весной травы и цветы. Бренд выпускает лимитку Seneshal под сезон.</p><p class="res"><b>Что даст:</b> регулярные продажи наборов на ресепшене и повод для бьюти-СМИ</p></div><div class="sub"><div class="sn">Б</div><h4>Лаборатория для двоих</h4><p>После события мастер-класс становится услугой SPA для подруг, мамы с дочерью или пары.</p><p class="res"><b>Что даст:</b> новая услуга SPA, которую можно дарить сертификатом</p></div><div class="sub"><div class="sn">В</div><h4>Свадебная бьюти-лаборатория</h4><p>Невеста и подружки собирают уход перед свадьбой, девичник в отеле. Связка со свадебным направлением.</p><p class="res"><b>Что даст:</b> девичники и сборы невест как дополнительный доход к свадьбе</p></div></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Категория</th><th>Примеры</th><th>Что даёт</th></tr><tr><td>Натуральная косметика</td><td>один из Mi&amp;Ko, Siberina, Levrana</td><td>технолог 1,5–2 ч, сырьё на 5 наборов и 20 SPA-сессий, тара</td></tr><tr><td>Лён и текстиль</td><td>средний российский бренд</td><td>5 халатов или полотенец с монограммой</td></tr><tr><td>Сухоцветы, травник</td><td>московская студия</td><td>фотозона «лаборатория», букет гостю</td></tr><tr><td>Керамика</td><td>российская студия</td><td>5 ступок или чашек для работы с травами</td></tr></table></div>
+      <p class="small">Названия брендов приводим как примеры уровня. Договорённостей пока нет, подтвердим после выбора идеи.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Дизайн</h3></div>
+      <div class="design">
+        <div class="pal-row"><div><p class="lbl">Основа: цвета отеля</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+          <div><p class="lbl">Акцент идеи</p><div class="swatches"><span class="sw"><i style="background:#e8d5cf"></i>Пудра</span><span class="sw"><i style="background:#b47e6f"></i>Глина</span><span class="sw"><i style="background:#f8efea"></i>Молоко</span><span class="sw"><i style="background:#a68352"></i>Золото</span></div></div></div>
+        <div class="dgrid">
+          <div><p class="lbl">Декор и предметы</p><p>Лаунж в белом, деревянные подносы, стеклянные баночки, ступки, сухоцветы, льняные фартуки с вышитой S.</p></div>
+          <div><p class="lbl">Полиграфия и фирменные детали</p><p>Этикетки «Seneshal × бренд» с именем гостя. Имена пишет каллиграф прямо на месте: это отдельный красивый кадр. Карточка-рецепт набора.</p></div>
+          <div><p class="lbl">Свет и стиль съёмки</p><p>Молочный дневной свет, макро рук и текстур, кадры сверху на подносы.</p></div>
+          <div><p class="lbl">Чего избегаем</p><p>Пластик, яркая упаковка, лабораторный «медицинский» вид.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>Кто что делает</h3></div>
+      <div class="roles">
+        <div class="role"><div class="acc-tag">Взлетай</div><ul class="dash"><li>Сценарий, тайминг и ведение программы на месте</li><li>Подбор, приглашение и бриф 5 блогеров (обязательные кадры, отметки, сроки)</li><li>Переговоры с брендами и подрядчиками, сбор подарков</li><li>Рассылка в СМИ, промокоды и итоговый отчёт с охватами и заявками</li><li>Рецептуры наборов вместе с технологом, дизайн этикетки</li></ul></div>
+        <div class="role"><div class="acc-tag">Отель Seneshal</div><ul class="dash"><li>Лаунж SPA на 2 часа, SPA-процедура со скрабом, который гость сделал сам</li><li>Площадка, номера и питание по согласованной программе</li><li>Один контактный человек и согласование дат</li><li>Публикация рилс и сторис у себя, промокод или ссылка на бронь</li><li>Согласие на съёмку и права на фото и видео для отеля, партнёров и агентства</li></ul></div>
+        <div class="role"><div class="acc-tag">Подрядчики</div><ul class="contr"><li><b>Фотограф</b>предметка и люди, макро текстур</li><li><b>Видеограф</b>процесс крупно для рилс</li><li><b>Каллиграф</b>имена гостей на этикетках вживую</li><li><b>Студия сухоцветов</b>подносы и фотозона</li><li><b>Вышивка или печать</b>монограмма на халатах и фартуках</li></ul><p class="small">Подбирает и координирует «Взлетай», условия (гонорар или бартер) согласуем с отелем.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Рилс для трёх аккаунтов</h3></div>
+      <div class="reels"><div class="reel"><div class="acc-tag">Блогеры</div><h4>«Собрала свой скраб в шале на озере»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>руки смешивают масла и соли, крупно</li><li>этикетка с её именем</li><li>нанесение в SPA</li><li>финал: баночка дома на полке, «теперь Сенеж у меня в ванной»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>сохранения, запись на лабораторию и продажи набора</p></div><div class="reel"><div class="acc-tag">Взлетай</div><h4>«Коллаборация бренда и отеля за 60 секунд»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>идея на бумаге</li><li>эскиз этикетки</li><li>готовая баночка в руках гостя</li><li>итог: набор на ресепшене</li></ul>
+      <p class="lbl">К чему приведёт</p><p>показываем брендам, что умеем делать коллаборации: новые клиенты-бренды</p></div><div class="reel"><div class="acc-tag">Seneshal</div><h4>«Рецепт Сенежа»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>шаги рецепта текстом на экране</li><li>технолог показывает пропорции</li><li>финал: «остальные секреты расскажем в SPA»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>рилс-сохранялка и запись на новую услугу</p></div></div>
+    </div>
+    <div class="pn"><a href=#i01>← 01</a><a href="#ideas">все идеи</a><a href=#i03>03 →</a></div>
+  </div>
+</section>
+<section class="idea" id="i03" style="--acc:#c9741f">
+  <header class="ihero" style="background-image:url(img/chef.jpg)">
+    <div class="ihero-in">
+      <div class="chap">Идея 03</div>
+      <h2>Вкус покоя</h2>
+      <p class="lead">SPA-меню от шефа: что есть и пить до, во время и после SPA. Chef&#x27;s table в халатах.</p>
+      <div class="swatches"><span class="sw"><i style="background:#d9822b"></i>Облепиха</span><span class="sw"><i style="background:#e9b949"></i>Мёд</span><span class="sw"><i style="background:#4f5a3a"></i>Лес</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Блогеры</h3></div>
+      <p class="note">5 человек: 1 крупный food-блогер, 2 средних, 2 микро. Женщины 28–45, Москва.</p>
+      <ul class="dash two"><li>Food и гастро: рестораны, подачи, рецепты</li><li>Правильное питание и wellness без фанатизма</li><li>Нутрициолог с блогом (экспертность)</li><li>Гастро-travel по Подмосковью</li><li>Эстетика стола и посуды</li></ul>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Три направления, куда можно развить идею</h3></div>
+      <div class="subs"><div class="sub"><div class="sn">А</div><h4>Самоварный вечер</h4><p>Чайная церемония по-русски: самовар, травник рассказывает о сборах, сезонные варенья.</p><p class="res"><b>Что даст:</b> отдельная вечерняя услуга для гостей и красивая зимняя тема для СМИ</p></div><div class="sub"><div class="sn">Б</div><h4>Герой сезона</h4><p>Каждый сезон один продукт в центре меню: облепиха, брусника, мёд, черника.</p><p class="res"><b>Что даст:</b> четыре инфоповода в год для food-СМИ</p></div><div class="sub"><div class="sn">В</div><h4>Шеф учит</h4><p>Мини мастер-класс шефа и карточки рецептов. Набор «SPA-меню дома» продаётся на ресепшене.</p><p class="res"><b>Что даст:</b> экспертность шефа и дополнительные продажи</p></div></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Категория</th><th>Примеры</th><th>Что даёт</th></tr><tr><td>Чай и травяные сборы</td><td>российские чайные бренды и травники</td><td>3–4 чая для самовара, наборы гостям</td></tr><tr><td>Мёд и суперфуды</td><td>пасека, облепиха, ягоды</td><td>мёд в сотах, облепиховый напиток, подарок</td></tr><tr><td>Керамика ручной работы</td><td>студия по портфолио</td><td>посуда для подачи</td></tr><tr><td>Самовары (по желанию)</td><td>тульские мастерские</td><td>самовар в кадре и на столе</td></tr></table></div>
+      <p class="small">Названия брендов приводим как примеры уровня. Договорённостей пока нет, подтвердим после выбора идеи.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Дизайн</h3></div>
+      <div class="design">
+        <div class="pal-row"><div><p class="lbl">Основа: цвета отеля</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+          <div><p class="lbl">Акцент идеи</p><div class="swatches"><span class="sw"><i style="background:#d9822b"></i>Облепиха</span><span class="sw"><i style="background:#e9b949"></i>Мёд</span><span class="sw"><i style="background:#4f5a3a"></i>Лес</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div></div></div>
+        <div class="dgrid">
+          <div><p class="lbl">Декор и предметы</p><p>Керамика, деревянные доски, самовар, пучки трав, мёд в сотах, гости в халатах у камина.</p></div>
+          <div><p class="lbl">Полиграфия и фирменные детали</p><p>Меню-карточка с акварельными ягодами и травами, карточки рецептов с QR на запись в SPA.</p></div>
+          <div><p class="lbl">Свет и стиль съёмки</p><p>Тёплый свет камина, крупные планы подач, пар над чашками.</p></div>
+          <div><p class="lbl">Чего избегаем</p><p>Ресторанная «белая скатерть», холодный свет, слишком много блюд в кадре.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>Кто что делает</h3></div>
+      <div class="roles">
+        <div class="role"><div class="acc-tag">Взлетай</div><ul class="dash"><li>Сценарий, тайминг и ведение программы на месте</li><li>Подбор, приглашение и бриф 5 блогеров (обязательные кадры, отметки, сроки)</li><li>Переговоры с брендами и подрядчиками, сбор подарков</li><li>Рассылка в СМИ, промокоды и итоговый отчёт с охватами и заявками</li><li>Помогаем шефу с подачей и текстами для СМИ</li></ul></div>
+        <div class="role"><div class="acc-tag">Отель Seneshal</div><ul class="dash"><li>Шеф, кухня и продукты для SPA-меню, Chef&#x27;s table в лаунже</li><li>Площадка, номера и питание по согласованной программе</li><li>Один контактный человек и согласование дат</li><li>Публикация рилс и сторис у себя, промокод или ссылка на бронь</li><li>Согласие на съёмку и права на фото и видео для отеля, партнёров и агентства</li></ul></div>
+        <div class="role"><div class="acc-tag">Подрядчики</div><ul class="contr"><li><b>Фуд-фотограф</b>подачи и меню для сайта отеля</li><li><b>Видеограф</b>рилс шефа и гостей</li><li><b>Фуд-стилист</b>подготовка подач к съёмке</li><li><b>Иллюстратор (по желанию)</b>акварель для меню</li><li><b>Типография</b>меню и карточки рецептов</li></ul><p class="small">Подбирает и координирует «Взлетай», условия (гонорар или бартер) согласуем с отелем.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Рилс для трёх аккаунтов</h3></div>
+      <div class="reels"><div class="reel"><div class="acc-tag">Блогеры</div><h4>«Что едят в SPA, если ты в шале на озере»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>POV: халат, поднос к купели</li><li>облепиховый напиток крупно, мёд стекает</li><li>шеф рассказывает о подаче</li><li>финал: «вернулась в Москву, а самовара в офисе нет»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>интерес к SPA-дню с меню, брони выходных</p></div><div class="reel"><div class="acc-tag">Взлетай</div><h4>«Шеф, мёд и пять блогеров: как мы собрали food-инфоповод»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>подготовка подач</li><li>гости за столом</li><li>скриншоты публикаций в СМИ</li></ul>
+      <p class="lbl">К чему приведёт</p><p>кейс для ресторанов и отелей</p></div><div class="reel"><div class="acc-tag">Seneshal</div><h4>«Рубрика «Шеф Сенежа» за 30 секунд»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>шеф готовит облепиховый напиток</li><li>рецепт текстом</li><li>финал: «следующий рецепт через неделю»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>рубрика на весь сезон и продажи SPA-меню</p></div></div>
+    </div>
+    <div class="pn"><a href=#i02>← 02</a><a href="#ideas">все идеи</a><a href=#i04>04 →</a></div>
+  </div>
+</section>
+<section class="idea" id="i04" style="--acc:#8a7a66">
+  <header class="ihero" style="background-image:url(img/iyashi.jpg)">
+    <div class="ihero-in">
+      <div class="chap">Идея 04</div>
+      <h2>Iyashi Dome</h2>
+      <p class="lead">Японский детокс на русском озере: капсула, лекция эксперта, купель и тишина.</p>
+      <div class="swatches"><span class="sw"><i style="background:#262524"></i>Вулкан</span><span class="sw"><i style="background:#8a7a66"></i>Камень</span><span class="sw"><i style="background:#d6b98c"></i>Песок</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Блогеры</h3></div>
+      <p class="note">5 человек: 1 крупный wellness-блогер, 2 средних, 2 микро. Женщины 30–45, Москва.</p>
+      <ul class="dash two"><li>Wellness и биохакинг: сон, восстановление, процедуры</li><li>Врач или нутрициолог с блогом</li><li>Бизнес-леди про выгорание и отдых</li><li>Фитнес или бег: восстановление после нагрузок</li><li>Бьюти-блогер: кожа после детокса</li></ul>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Три направления, куда можно развить идею</h3></div>
+      <div class="subs"><div class="sub"><div class="sn">А</div><h4>Детокс-уикенд для уставших</h4><p>Будний пакет на одну ночь для москвичей: капсула, купель, лёгкое меню, ранний сон.</p><p class="res"><b>Что даст:</b> загрузка в будни, которые сложнее всего продать</p></div><div class="sub"><div class="sn">Б</div><h4>После праздников</h4><p>Январский детокс после новогодних: инфоповод «как восстановиться после праздников».</p><p class="res"><b>Что даст:</b> попадание в январские подборки СМИ</p></div><div class="sub"><div class="sn">В</div><h4>Восстановление для спортсменов</h4><p>Беговые и фитнес-клубы: капсула после нагрузки, партнёр клуб или бренд спортпита.</p><p class="res"><b>Что даст:</b> новая аудитория и групповые выезды клубов</p></div></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Категория</th><th>Примеры</th><th>Что даёт</th></tr><tr><td>Детокс-продукты, БАДы</td><td>средний российский бренд</td><td>наборы гостям и программа «после капсулы»</td></tr><tr><td>Японская косметика</td><td>по желанию</td><td>маски и гидролаты после сеанса</td></tr><tr><td>Японский чай, матча</td><td>локальные бренды</td><td>чайная церемония после капсулы</td></tr><tr><td>Беговой клуб или спортпит</td><td>для направления «спортсмены»</td><td>участники и розыгрыш</td></tr></table></div>
+      <p class="small">Названия брендов приводим как примеры уровня. Договорённостей пока нет, подтвердим после выбора идеи.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Дизайн</h3></div>
+      <div class="design">
+        <div class="pal-row"><div><p class="lbl">Основа: цвета отеля</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+          <div><p class="lbl">Акцент идеи</p><div class="swatches"><span class="sw"><i style="background:#262524"></i>Вулкан</span><span class="sw"><i style="background:#8a7a66"></i>Камень</span><span class="sw"><i style="background:#d6b98c"></i>Песок</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div></div></div>
+        <div class="dgrid">
+          <div><p class="lbl">Декор и предметы</p><p>Японский минимализм: речные камни, бамбук, белые полотенца, приглушённый янтарный свет, много пустоты.</p></div>
+          <div><p class="lbl">Полиграфия и фирменные детали</p><p>Программа детокса на рисовой бумаге, печать-ханко с монограммой S, карточка «что делать после капсулы».</p></div>
+          <div><p class="lbl">Свет и стиль съёмки</p><p>Графит и тёплый песок, контровой свет, медленные кадры.</p></div>
+          <div><p class="lbl">Чего избегаем</p><p>Медицинские кадры, кафель крупным планом, яркие цвета.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>Кто что делает</h3></div>
+      <div class="roles">
+        <div class="role"><div class="acc-tag">Взлетай</div><ul class="dash"><li>Сценарий, тайминг и ведение программы на месте</li><li>Подбор, приглашение и бриф 5 блогеров (обязательные кадры, отметки, сроки)</li><li>Переговоры с брендами и подрядчиками, сбор подарков</li><li>Рассылка в СМИ, промокоды и итоговый отчёт с охватами и заявками</li><li>Подбор эксперта и согласование текстов с ним</li></ul></div>
+        <div class="role"><div class="acc-tag">Отель Seneshal</div><ul class="dash"><li>Капсула Iyashi Dome на 5 сеансов, купель, лёгкое SPA-меню</li><li>Площадка, номера и питание по согласованной программе</li><li>Один контактный человек и согласование дат</li><li>Публикация рилс и сторис у себя, промокод или ссылка на бронь</li><li>Согласие на съёмку и права на фото и видео для отеля, партнёров и агентства</li></ul></div>
+        <div class="role"><div class="acc-tag">Подрядчики</div><ul class="contr"><li><b>Эксперт: врач или нутрициолог</b>лекция 30–40 минут и комментарии для СМИ</li><li><b>Фотограф</b>кадры в полумраке, без вспышки</li><li><b>Видеограф</b>медленные кадры для рилс</li><li><b>Мастер чайной церемонии (по желанию)</b>церемония после сеанса</li><li><b>Декоратор</b>камни и бамбук, минимально</li></ul><p class="small">Подбирает и координирует «Взлетай», условия (гонорар или бартер) согласуем с отелем.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Рилс для трёх аккаунтов</h3></div>
+      <div class="reels"><div class="reel"><div class="acc-tag">Блогеры</div><h4>«Я пролежала 30 минут в японской капсуле. Что было дальше»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>вход в капсулу и таймер</li><li>песок и свет крупно</li><li>купель после сеанса</li><li>финал: «проснулась через 9 часов, телефон так и не нашла»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>любопытство и брони «Детокс-уикенда»</p></div><div class="reel"><div class="acc-tag">Взлетай</div><h4>«Как редкую процедуру сделать инфоповодом»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>эксперт на лекции</li><li>гости</li><li>публикации в СМИ</li></ul>
+      <p class="lbl">К чему приведёт</p><p>кейс для wellness-брендов и клиник</p></div><div class="reel"><div class="acc-tag">Seneshal</div><h4>«Что такое Iyashi Dome за 20 секунд»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>эксперт и три факта текстом</li><li>кадры капсулы</li><li>финал: пакет «Детокс по будням»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>загрузка будних дней</p></div></div>
+    </div>
+    <div class="pn"><a href=#i03>← 03</a><a href="#ideas">все идеи</a><a href=#i06>06 →</a></div>
+  </div>
+</section>
+<section class="idea" id="i06" style="--acc:#7d79a8">
+  <header class="ihero" style="background-image:url(img/pillows.jpg)">
+    <div class="ihero-in">
+      <div class="chap">Идея 06</div>
+      <h2>Seneshal Sleep</h2>
+      <p class="lead">Отель, где высыпаются: меню подушек, аромат «Сенеж» и вечерний ритуал сна.</p>
+      <div class="swatches"><span class="sw"><i style="background:#1f2a48"></i>Ночь</span><span class="sw"><i style="background:#4b5583"></i>Сумерки</span><span class="sw"><i style="background:#b7b2d6"></i>Лаванда</span><span class="sw"><i style="background:#a68352"></i>Золото</span></div>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Блогеры</h3></div>
+      <p class="note">5 человек: 1 крупный, 2 средних, 2 микро. Женщины 28–45, Москва.</p>
+      <ul class="dash two"><li>Мамы маленьких детей: недосып как главная тема (сильная эмоция)</li><li>Бизнес-леди и предприниматели</li><li>Уют и интерьер: спальня, текстиль, ароматы</li><li>Wellness: сон и восстановление</li><li>Парфюмерный блогер (для направления «аромат»)</li></ul>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Три направления, куда можно развить идею</h3></div>
+      <div class="subs"><div class="sub"><div class="sn">А</div><h4>Ночь для мам</h4><p>Мамы маленьких детей наконец высыпаются. Сильная эмоция и ирония, такой контент много пересылают.</p><p class="res"><b>Что даст:</b> вирусный охват и пакет «Мама спит» для гостей</p></div><div class="sub"><div class="sn">Б</div><h4>Аромат Сенежа</h4><p>Парфюмер собирает аромат отеля, подписчики голосуют за ноты, потом аромат продаётся как свеча и спрей.</p><p class="res"><b>Что даст:</b> фирменный аромат-сувенир и продажи на ресепшене</p></div><div class="sub"><div class="sn">В</div><h4>Ночь без телефона</h4><p>Телефоны на ночь уходят в «шкатулку сна» на ресепшене, утром гости рассказывают, как спали.</p><p class="res"><b>Что даст:</b> тема цифрового детокса для СМИ</p></div></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Категория</th><th>Примеры</th><th>Что даёт</th></tr><tr><td>Нишевая парфюмерия, ароматы для дома</td><td>российские бренды, подберём</td><td>аромат «Сенеж», пробники, парфюмер</td></tr><tr><td>Постельное бельё и подушки</td><td>средний бренд</td><td>комплекты на 5 номеров</td></tr><tr><td>Шёлковые маски, травяной чай</td><td>по желанию</td><td>вечерний подарок гостям</td></tr><tr><td>Свечи</td><td>нишевые российские марки</td><td>свеча с ароматом отеля</td></tr></table></div>
+      <p class="small">Названия брендов приводим как примеры уровня. Договорённостей пока нет, подтвердим после выбора идеи.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Дизайн</h3></div>
+      <div class="design">
+        <div class="pal-row"><div><p class="lbl">Основа: цвета отеля</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+          <div><p class="lbl">Акцент идеи</p><div class="swatches"><span class="sw"><i style="background:#1f2a48"></i>Ночь</span><span class="sw"><i style="background:#4b5583"></i>Сумерки</span><span class="sw"><i style="background:#b7b2d6"></i>Лаванда</span><span class="sw"><i style="background:#a68352"></i>Золото</span></div></div></div>
+        <div class="dgrid">
+          <div><p class="lbl">Декор и предметы</p><p>Белый хлопок, шёлковые маски, свечи, поднос на тумбе: чай, флакон, маска, открытка «спокойной ночи».</p></div>
+          <div><p class="lbl">Полиграфия и фирменные детали</p><p>Меню подушек и ароматов карточками, открытка с золотым тиснением, шкатулка для телефона с монограммой.</p></div>
+          <div><p class="lbl">Свет и стиль съёмки</p><p>Вечер в тёплом свете свечей и утро в мягком дневном свете, сине-лавандовая гамма.</p></div>
+          <div><p class="lbl">Чего избегаем</p><p>Пёстрое бельё, верхний свет, гаджеты в кадре.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>Кто что делает</h3></div>
+      <div class="roles">
+        <div class="role"><div class="acc-tag">Взлетай</div><ul class="dash"><li>Сценарий, тайминг и ведение программы на месте</li><li>Подбор, приглашение и бриф 5 блогеров (обязательные кадры, отметки, сроки)</li><li>Переговоры с брендами и подрядчиками, сбор подарков</li><li>Рассылка в СМИ, промокоды и итоговый отчёт с охватами и заявками</li><li>Сценарий вечернего ритуала и утреннего «как я спала»</li></ul></div>
+        <div class="role"><div class="acc-tag">Отель Seneshal</div><ul class="dash"><li>5 номеров с меню подушек, вечерний чай, поздний завтрак</li><li>Площадка, номера и питание по согласованной программе</li><li>Один контактный человек и согласование дат</li><li>Публикация рилс и сторис у себя, промокод или ссылка на бронь</li><li>Согласие на съёмку и права на фото и видео для отеля, партнёров и агентства</li></ul></div>
+        <div class="role"><div class="acc-tag">Подрядчики</div><ul class="contr"><li><b>Парфюмер</b>аромат и рассказ, как выбрать</li><li><b>Сомнолог</b>гайд «как выспаться» и комментарии для СМИ</li><li><b>Фотограф</b>вечер и утро, поэтому нужна ночёвка</li><li><b>Видеограф</b>вечерний ритуал и пробуждение</li><li><b>Типография и упаковка</b>меню подушек, открытки, шкатулки</li></ul><p class="small">Подбирает и координирует «Взлетай», условия (гонорар или бартер) согласуем с отелем.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Рилс для трёх аккаунтов</h3></div>
+      <div class="reels"><div class="reel"><div class="acc-tag">Блогеры</div><h4>«Ночь, когда я наконец выспалась»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>вечерний ритуал по шагам</li><li>выбор подушки и аромата</li><li>телефон в шкатулку</li><li>утро: открывает глаза, свет из окна</li><li>финал: «единственный минус: дома теперь не спится»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>запросы на sleep-пакет и продажи аромата</p></div><div class="reel"><div class="acc-tag">Взлетай</div><h4>«Как продать отелю сон»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>идея</li><li>парфюмер и пробники</li><li>аромат под именем отеля</li></ul>
+      <p class="lbl">К чему приведёт</p><p>кейс для гостиниц и бьюти-брендов</p></div><div class="reel"><div class="acc-tag">Seneshal</div><h4>«Меню подушек»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>горничная раскладывает 5 подушек, у каждой подпись</li><li>вопрос в конце: «какую берёте?»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>комментарии, вовлечение и брони</p></div></div>
+    </div>
+    <div class="pn"><a href=#i04>← 04</a><a href="#ideas">все идеи</a><a href=#i07>07 →</a></div>
+  </div>
+</section>
+<section class="idea" id="i07" style="--acc:#8a5a3b">
+  <header class="ihero" style="background-image:url(img/chalet2.jpg)">
+    <div class="ihero-in">
+      <div class="chap">Идея 07</div>
+      <h2>Пар и покой</h2>
+      <p class="lead">Вечер банных ритуалов с пармейстером, купель с видом на Сенеж, чай у камина.</p>
+      <div class="swatches"><span class="sw"><i style="background:#3b2a20"></i>Сруб</span><span class="sw"><i style="background:#8a5a3b"></i>Кедр</span><span class="sw"><i style="background:#c99a5b"></i>Мёд</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Блогеры</h3></div>
+      <p class="note">5 человек: 1 крупный, 2 средних, 2 микро. В основном женщины 30–45, один гость может быть мужчиной.</p>
+      <ul class="dash two"><li>Загородный lifestyle и выходные в Подмосковье</li><li>Банная культура: баня сейчас в тренде</li><li>Wellness и восстановление</li><li>Пара-блогер (для направления «баня для двоих»)</li><li>Travel «куда поехать зимой»</li></ul>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Три направления, куда можно развить идею</h3></div>
+      <div class="subs"><div class="sub"><div class="sn">А</div><h4>Банные вечера по билетам</h4><p>Раз в месяц открытый вечер с пармейстером для гостей и москвичей.</p><p class="res"><b>Что даст:</b> отдельный продукт выходного дня</p></div><div class="sub"><div class="sn">Б</div><h4>Зимний пар</h4><p>Снег после парной, купель в тумане, горячий сбитень у камина, шале в снегу.</p><p class="res"><b>Что даст:</b> попадание в подборки «куда поехать зимой из Москвы»</p></div><div class="sub"><div class="sn">В</div><h4>Баня для двоих</h4><p>Пакет для пар: парение, купель, ужин, ночь. Связка со свадьбами и годовщинами.</p><p class="res"><b>Что даст:</b> подарочные сертификаты и повторные визиты пар</p></div></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Категория</th><th>Примеры</th><th>Что даёт</th></tr><tr><td>Банная косметика и запарки</td><td>Mi&amp;Ko, Siberina (мы на связи)</td><td>масла, мёд, соли, набор каждому гостю</td></tr><tr><td>Банный текстиль</td><td>войлок и лён, подберём</td><td>5 шапок с вышивкой Seneshal, простыни</td></tr><tr><td>Мёд, чай, сбитень</td><td>локальные производители</td><td>чаепитие у камина</td></tr><tr><td>Свечи</td><td>нишевые российские марки</td><td>свет в лаунже</td></tr></table></div>
+      <p class="small">Названия брендов приводим как примеры уровня. Договорённостей пока нет, подтвердим после выбора идеи.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Дизайн</h3></div>
+      <div class="design">
+        <div class="pal-row"><div><p class="lbl">Основа: цвета отеля</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+          <div><p class="lbl">Акцент идеи</p><div class="swatches"><span class="sw"><i style="background:#3b2a20"></i>Сруб</span><span class="sw"><i style="background:#8a5a3b"></i>Кедр</span><span class="sw"><i style="background:#c99a5b"></i>Мёд</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div></div></div>
+        <div class="dgrid">
+          <div><p class="lbl">Декор и предметы</p><p>Медные ковши, свечи, льняные простыни, дубовые и эвкалиптовые веники, фетровые шапки с вышивкой S золотой нитью.</p></div>
+          <div><p class="lbl">Полиграфия и фирменные детали</p><p>Деревянные таблички с названиями заходов, карта ароматов ритуала, карточка «как париться на Сенеже».</p></div>
+          <div><p class="lbl">Свет и стиль съёмки</p><p>Пар в тёплом свете, сумерки и синее небо над купелью, снег зимой.</p></div>
+          <div><p class="lbl">Чего избегаем</p><p>Пластиковые тазики, яркие полотенца, вспышка в парной.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>Кто что делает</h3></div>
+      <div class="roles">
+        <div class="role"><div class="acc-tag">Взлетай</div><ul class="dash"><li>Сценарий, тайминг и ведение программы на месте</li><li>Подбор, приглашение и бриф 5 блогеров (обязательные кадры, отметки, сроки)</li><li>Переговоры с брендами и подрядчиками, сбор подарков</li><li>Рассылка в СМИ, промокоды и итоговый отчёт с охватами и заявками</li><li>Подбор пармейстера и согласование с SPA отеля</li></ul></div>
+        <div class="role"><div class="acc-tag">Отель Seneshal</div><ul class="dash"><li>Баня и купель «Вилла СПА», допуск внешнего пармейстера</li><li>Площадка, номера и питание по согласованной программе</li><li>Один контактный человек и согласование дат</li><li>Публикация рилс и сторис у себя, промокод или ссылка на бронь</li><li>Согласие на съёмку и права на фото и видео для отеля, партнёров и агентства</li></ul></div>
+        <div class="role"><div class="acc-tag">Подрядчики</div><ul class="contr"><li><b>Пармейстер</b>парение 2–3 часа, свои веники и запарки</li><li><b>Фотограф</b>с опытом съёмки в пару, защита техники</li><li><b>Видеограф</b>пар и купель для рилс</li><li><b>Вышивка</b>шапки и простыни с монограммой</li><li><b>Музыкант (по желанию)</b>гонг или хэндпан в лаунже</li></ul><p class="small">Подбирает и координирует «Взлетай», условия (гонорар или бартер) согласуем с отелем.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Рилс для трёх аккаунтов</h3></div>
+      <div class="reels"><div class="reel"><div class="acc-tag">Блогеры</div><h4>«Пять заходов: как парят на Сенеже»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>каждый заход: свой аромат и свой кадр</li><li>пар в свете</li><li>купель и снег</li><li>финал: «пармейстер сказал, что это была разминка»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>брони банных вечеров</p></div><div class="reel"><div class="acc-tag">Взлетай</div><h4>«Наша команда тоже парилась. По работе»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>закулисье с иронией: команда в шапках с планшетом</li><li>тайминг</li><li>гости</li></ul>
+      <p class="lbl">К чему приведёт</p><p>живой образ агентства и кейс</p></div><div class="reel"><div class="acc-tag">Seneshal</div><h4>«Звук пара»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>только звуки: шипение камней, веник, всплеск купели</li><li>титр: дата следующего банного вечера</li></ul>
+      <p class="lbl">К чему приведёт</p><p>продажа билетов на вечер</p></div></div>
+    </div>
+    <div class="pn"><a href=#i06>← 06</a><a href="#ideas">все идеи</a><a href=#i08>08 →</a></div>
+  </div>
+</section>
+<section class="idea" id="i08" style="--acc:#b8955a">
+  <header class="ihero" style="background-image:url(img/wed_lake.jpg)">
+    <div class="ihero-in">
+      <div class="chap">Идея 08</div>
+      <h2>Свадебные выходные на Сенеже</h2>
+      <p class="lead">Свадьба мечты в миниатюре для 2–3 пар: утро невесты, клятвы на пирсе, ужин на террасе.</p>
+      <div class="swatches"><span class="sw"><i style="background:#f4ece1"></i>Шампань</span><span class="sw"><i style="background:#e3cfa9"></i>Крем</span><span class="sw"><i style="background:#b8955a"></i>Золото</span><span class="sw"><i style="background:#7c8b6f"></i>Эвкалипт</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div>
+    </div>
+  </header>
+  <div class="iwrap">
+    <div class="block">
+      <div class="bh"><span class="bn">1</span><h3>Блогеры</h3></div>
+      <p class="note">2–3 пары, 4–6 человек в общей сложности. Аудитория: женщины 25–40, Москва. Основной сезон — весна 2027, зимний вариант («Французская зима») — дополнительное предложение.</p>
+      <ul class="dash two"><li>Помолвленная пара-блогер, которая выбирает площадку</li><li>Молодожёны: обновление клятв</li><li>Пара, которая вместе 5–10 лет: «свадьбы не было, давай сейчас»</li><li>Свадебный блогер или эксперт как одна из пар (по возможности)</li><li>Пара с собакой (собака-кольценосец)</li></ul>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">2</span><h3>Три направления, куда можно развить идею</h3></div>
+      <div class="subs"><div class="sub"><div class="sn">А</div><h4>Помолвка под ключ</h4><p>Предложение на пирсе с фотографом, цветами и ужином. Пара, которая сделала здесь предложение, захочет и свадьбу здесь.</p><p class="res"><b>Что даст:</b> новый пакет и поток будущих свадеб, пик к 14 февраля</p></div><div class="sub"><div class="sn">Б</div><h4>Французская зима</h4><p>Зимняя версия: Зимний сад в свечах, шале в снегу, пар над озером.</p><p class="res"><b>Что даст:</b> зимний контент, которого нет у конкурентов</p></div><div class="sub"><div class="sn">В</div><h4>Свадьба с собакой</h4><p>Собака-кольценосец, бабочка и ошейник от бренда для животных.</p><p class="res"><b>Что даст:</b> самый пересылаемый формат контента</p></div></div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">3</span><h3>Бренды</h3></div>
+      <div class="tw"><table class="bt"><tr><th>Категория</th><th>Примеры</th><th>Что даёт</th></tr><tr><td>Ювелирные</td><td>AVGVST, Poison Drop, Moonka Studio</td><td>кольца и украшения на съёмку (с возвратом)</td></tr><tr><td>Свадебные платья</td><td>Gabbiano, Papilio</td><td>2–3 платья и костюм жениха</td></tr><tr><td>Российское вино</td><td>Лефкадия, Шато де Талю, Дивноморское</td><td>бутылки для тоста и ужина</td></tr><tr><td>Кондитер</td><td>авторская кондитерская Москвы</td><td>мини-торт и десерты на 4–6</td></tr><tr><td>Товары для собак</td><td>средний бренд аксессуаров</td><td>бабочка, ошейник, лакомства</td></tr></table></div>
+      <p class="small">Названия брендов приводим как примеры уровня. Договорённостей пока нет, подтвердим после выбора идеи.</p>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">4</span><h3>Дизайн</h3></div>
+      <div class="design">
+        <div class="pal-row"><div><p class="lbl">Основа: цвета отеля</p><div class="swatches"><span class="sw"><i style="background:#06244a"></i>Сенеж (navy)</span><span class="sw"><i style="background:#a68352"></i>Золото</span><span class="sw"><i style="background:#c9ad86"></i>Песок</span><span class="sw"><i style="background:#e3ded8"></i>Беж</span><span class="sw"><i style="background:#fbf9f8"></i>Слоновая кость</span></div></div>
+          <div><p class="lbl">Акцент идеи</p><div class="swatches"><span class="sw"><i style="background:#f4ece1"></i>Шампань</span><span class="sw"><i style="background:#e3cfa9"></i>Крем</span><span class="sw"><i style="background:#b8955a"></i>Золото</span><span class="sw"><i style="background:#7c8b6f"></i>Эвкалипт</span><span class="sw"><i style="background:#06244a"></i>Сенеж</span></div></div></div>
+        <div class="dgrid">
+          <div><p class="lbl">Декор и предметы</p><p>Арка из белых цветов и эвкалипта на пирсе, свечи, шёлковые ленты. Зимой Зимний сад в свечах.</p></div>
+          <div><p class="lbl">Полиграфия и фирменные детали</p><p>Приглашения на хлопковой бумаге с золотым тиснением, сургуч с монограммой S, карточки с клятвами, свадебное меню. Лента цвета navy как акцент отеля.</p></div>
+          <div><p class="lbl">Свет и стиль съёмки</p><p>Золотой час над озером, светлая плёночная обработка, крупно руки и кольца.</p></div>
+          <div><p class="lbl">Чего избегаем</p><p>Пёстрый декор, воздушные шары, искусственные цветы.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">5</span><h3>Кто что делает</h3></div>
+      <div class="roles">
+        <div class="role"><div class="acc-tag">Взлетай</div><ul class="dash"><li>Сценарий, тайминг и ведение программы на месте</li><li>Подбор, приглашение и бриф 5 блогеров (обязательные кадры, отметки, сроки)</li><li>Переговоры с брендами и подрядчиками, сбор подарков</li><li>Рассылка в СМИ, промокоды и итоговый отчёт с охватами и заявками</li><li>Подбор пар, сценарий церемонии, свадебные СМИ</li></ul></div>
+        <div class="role"><div class="acc-tag">Отель Seneshal</div><ul class="dash"><li>Сюит для утра невесты, пирс, Зимний сад, ужин-дегустация, номера для пар, разговор отдела продаж о свадьбе</li><li>Площадка, номера и питание по согласованной программе</li><li>Один контактный человек и согласование дат</li><li>Публикация рилс и сторис у себя, промокод или ссылка на бронь</li><li>Согласие на съёмку и права на фото и видео для отеля, партнёров и агентства</li></ul></div>
+        <div class="role"><div class="acc-tag">Подрядчики</div><ul class="contr"><li><b>Флорист-декоратор</b>арка, 3 букета, бутоньерки, цветы в сюит</li><li><b>Свадебный фотограф</b>утро, церемония, золотой час, банк кадров площадки</li><li><b>Видеограф</b>клип каждой паре и рилс для отеля</li><li><b>Визажист и стилист</b>образы невест</li><li><b>Ведущий церемонии</b>текст и проведение обновления клятв</li><li><b>Музыка</b>скрипка или струнный дуэт</li><li><b>Каллиграф</b>приглашения и карточки клятв</li></ul><p class="small">Подбирает и координирует «Взлетай», условия (гонорар или бартер) согласуем с отелем.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="bh"><span class="bn">6</span><h3>Рилс для трёх аккаунтов</h3></div>
+      <div class="reels"><div class="reel"><div class="acc-tag">Блогеры</div><h4>«Мы сказали «да» второй раз»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>сборы невесты в сюите</li><li>первый взгляд жениха</li><li>клятвы на пирсе</li><li>торт и ужин</li><li>финал: «следующая годовщина здесь же, уже втроём»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>заявки на осмотр площадки по промокоду</p></div><div class="reel"><div class="acc-tag">Взлетай</div><h4>«Свадьба за 48 часов: 8 партнёров, 3 пары, одно озеро»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>тайм-лапс подготовки арки</li><li>партнёры за работой</li><li>итоговые кадры</li></ul>
+      <p class="lbl">К чему приведёт</p><p>кейс для свадебных брендов и площадок</p></div><div class="reel"><div class="acc-tag">Seneshal</div><h4>«Вид, ради которого женятся»</h4>
+      <p class="lbl">Обязательно снять</p><ul class="dash"><li>камера идёт из зала к пирсу</li><li>арка и пара в золотой час</li><li>титр: «даты 2027 открыты»</li></ul>
+      <p class="lbl">К чему приведёт</p><p>заявки на осмотр и брони свадеб 2027</p></div></div>
+    </div>
+    <div class="pn"><a href=#i07>← 07</a><a href="#ideas">все идеи</a><span></span></div>
+  </div>
+</section>
+<section class="outro"><div class="wrap">
+  <div class="eyebrow">Следующий шаг</div>
+  <h2>Что нужно от отеля, чтобы начать</h2>
+  <ul class="dash" style="margin-top:20px;max-width:820px">
+    <li>Подтвердить порядок: SPA-сутки этой зимой, свадебные выходные весной 2027 (зимний вариант на рассмотрение)</li>
+    <li>2–3 свободные даты на выходных конца ноября – начала декабря</li>
+    <li>Какие развлечения на озере доступны весной (лодки, сапы, пикник) и можно ли проводить церемонию на пирсе и террасе</li>
+    <li>Номера для гостей и ночёвка для команды и фотографа (обязательно для идеи 06). Команда приезжает за 4–5 часов до гостей и уезжает на 3 часа позже (на рассмотрение: заезд команды накануне)</li>
+    <li>Допуск внешних специалистов: пармейстер, технолог, парфюмер, эксперт</li>
+    <li>Контактное лицо и согласование прав на контент</li>
+  </ul>
+  <a class="btn" href="kamerny.html">Презентация «Камерный формат» →</a>
+  <p class="legal">Бренды и подрядчики указаны как примеры категорий, договорённостей с ними пока нет. Стоимость и условия обсуждает Виктория Захарова.</p>
+  <p class="author">PR-агентство «Взлетай» · <b>Виктория Захарова</b>, генеральный директор<br>Автор идей и концепций: <b>Данилова Полина Антоновна</b>, PR-менеджер, соорганизатор проекта в Seneshal · Instagram <a href="https://www.instagram.com/monargixx/" target="_blank" rel="noopener">@monargixx</a></p>
+</div></section>
+<script>
+const links=[...document.querySelectorAll('.chips a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id));const on=links.find(a=>a.classList.contains('on'));if(on){const box=on.parentElement;box.scrollLeft=on.offsetLeft-box.clientWidth/2+on.clientWidth/2}}}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('#ideas,#plan,.idea').forEach(s=>io.observe(s));
+(function(){
+  const $=id=>document.getElementById(id), v=id=>Math.max(0,+$(id).value||0);
+  const n=x=>Math.round(x).toLocaleString('ru-RU'), rub=x=>{x=Math.round(x);return x>=1e6?(x/1e6).toFixed(1).replace('.',',')+' млн ₽':n(x)+' ₽'};
+  function calc(){
+    const night=v('c_night'),spa=v('c_spa'),wed=v('c_wed'),food=v('c_food');
+    const sc=[[400000,.003,.01],[700000,.005,.015]], rev=[];
+    sc.forEach(([r,c,b],i)=>{const cl=r*c,br=Math.round(cl*b),sp=Math.round(br*.3);
+      $('o_cl'+(i+1)).textContent=n(cl);$('o_b'+(i+1)).textContent=br;$('o_s'+(i+1)).textContent=sp;
+      rev[i]=br*night+sp*spa;$('o_r'+(i+1)).textContent=rub(rev[i]);});
+    const rooms=8*night,spaC=2*spa,foodC=11*food,cost=rooms+spaC+foodC;
+    $('o_rooms').textContent=rub(rooms);$('o_spa').textContent=rub(spaC);$('o_food').textContent=rub(foodC);$('o_cost').textContent=rub(cost);
+    const k=x=>cost?(x/cost).toFixed(1).replace('.',','):'—';
+    $('o_k1').textContent=k(rev[0])+'–'+k(rev[1])+' ₽';
+    const w1=Math.round(8*.2),w2=Math.round(10*.3);
+    $('o_w1').textContent=w1;$('o_w2').textContent=w2;$('o_wr1').textContent=rub(w1*wed);$('o_wr2').textContent=rub(w2*wed);
+    const mln=x=>(x/1e6).toFixed(1).replace('.',',').replace(',0','');
+    $('o_k3').textContent=(w2*wed>=1e6)?mln(w1*wed)+'–'+mln(w2*wed)+' млн ₽':rub(w1*wed)+'–'+rub(w2*wed);
+  }
+  ['c_night','c_spa','c_wed','c_food'].forEach(id=>$(id).addEventListener('input',calc));calc();
+})();
+</script>
+</body>
+</html>
